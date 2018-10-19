@@ -1,0 +1,114 @@
+body{
+background-color:black;
+position: relative;
+    -webkit-animation: myfirst 6s 1; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    animation: myfirst 2s 1;
+    animation-direction: alternate;
+}
+
+#container{
+
+height:220%;
+border: 3px solid #ffd88e;
+padding: 10px;
+background-color:black;
+margin-left:auto;
+margin-right:auto;
+position: relative;
+    -webkit-animation: myfirst 3s 1; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    animation: myfirst 2s 1;
+    animation-direction: alternate;
+}
+#menu
+{
+  list-style-type:none;
+  margin :0;
+
+  overflow:hidden;
+}
+
+#items
+{
+  padding:100px 100px;
+  align:center;
+  float:left;
+
+}
+#header{
+  perspective: 3000px;
+   font-family: 'Source Sans Pro', sans-serif;
+   appearance:button;
+-webkit-appearance:button;
+position: relative;
+    -webkit-animation-name: mymove;  /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 6s;  /* Chrome, Safari, Opera */
+    animation-name: mymove;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+float:center;
+font-style:semibold italic;
+text-align:center;
+background-color:black;
+}
+#content{
+text-align:center;
+height:65%;
+background-color:tomato;
+border: 3px solid cyan;
+padding: 10px;
+position: relative;
+    -webkit-animation: myfirst 8s 1; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    animation: myfirst 7s 1;
+    animation-direction: alternate;
+}
+
+#main{
+width: 1020px;
+height:444px;
+float:right;
+position: relative;
+    -webkit-animation: myfirst 2s 1; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    animation: myfirst 3s 1;
+    animation-direction: alternate;
+}
+#footer{
+border:1px solid blue;
+clear:both;
+background-color:grey;
+color:#ffd88e;
+text-align:right;
+position: relative;
+    -webkit-animation: myfirst 7s 1; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    animation: myfirst 4s 1;
+    animation-direction: alternate;
+}
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: blue; left: 200px; top: 200px;}
+    75%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+}
+
+@keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: blue; left: 200px; top: 200px;}
+    75%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+}
